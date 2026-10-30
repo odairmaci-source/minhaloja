@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Loja - Catálogo Online</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Topo / Cabeçalho -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <h1 class="text-xl font-bold tracking-wide uppercase">📦 Minha Loja Atacado</h1>
+            <a href="https://wa.me/5541999999999?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20dúvidas." target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 transition">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Fale Conosco
+            </a>
+        </div>
+    </header>
+
+    <!-- Aviso de Condições / Compra Mínima -->
+    <section class="bg-amber-100 border-b border-amber-200 text-amber-900 py-3 px-4 text-center text-sm font-medium">
+        <i class="fa-solid fa-circle-info mr-1"></i> <strong>COMPRA MÍNIMA:</strong> 6 Peças Variadas | Envio para Todo o Brasil 🚀
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-6xl mx-auto px-4 py-6">
+
+        <!-- Categorias -->
+        <section class="mb-8">
+            <h2 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-slate-900 pl-2">Categorias</h2>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 text-center">
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition cursor-pointer">
+                    <div class="w-12 h-12 mx-auto bg-gray-200 rounded-full mb-2 flex items-center justify-center text-gray-600"><i class="fa-solid fa-shirt"></i></div>
+                    <span class="text-xs font-semibold">Camisetas</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition cursor-pointer">
+                    <div class="w-12 h-12 mx-auto bg-gray-200 rounded-full mb-2 flex items-center justify-center text-gray-600"><i class="fa-solid fa-vest"></i></div>
+                    <span class="text-xs font-semibold">Shorts</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition cursor-pointer">
+                    <div class="w-12 h-12 mx-auto bg-gray-200 rounded-full mb-2 flex items-center justify-center text-gray-600"><i class="fa-solid fa-hat-cowboy"></i></div>
+                    <span class="text-xs font-semibold">Bonés</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition cursor-pointer">
+                    <div class="w-12 h-12 mx-auto bg-gray-200 rounded-full mb-2 flex items-center justify-center text-gray-600"><i class="fa-solid fa-person-running"></i></div>
+                    <span class="text-xs font-semibold">Conjuntos</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition cursor-pointer">
+                    <div class="w-12 h-12 mx-auto bg-gray-200 rounded-full mb-2 flex items-center justify-center text-gray-600"><i class="fa-solid fa-fire"></i></div>
+                    <span class="text-xs font-semibold">Promoções</span>
+                </div>
+                <div class="bg-white p-3 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition cursor-pointer">
+                    <div class="w-12 h-12 mx-auto bg-gray-200 rounded-full mb-2 flex items-center justify-center text-gray-600"><i class="fa-solid fa-list"></i></div>
+                    <span class="text-xs font-semibold">Ver Todos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vitrine de Produtos -->
+        <section>
+            <h2 class="text-lg font-bold text-slate-800 mb-4 border-l-4 border-slate-900 pl-2">Produtos em Destaque</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                
+                <!-- Card de Produto 1 -->
+                <div class="bg-white rounded-xl shadow-xs border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="bg-gray-100 h-44 flex items-center justify-center overflow-hidden">
+                            <!-- Substitua o link da imagem abaixo pela foto real do seu produto -->
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500" alt="Camiseta Básica" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="text-sm font-medium text-slate-800 line-clamp-2">CAMISETA ALGODÃO 30.1 PREMIUM</h3>
+                            <div class="mt-2">
+                                <span class="text-xs text-gray-400 line-through">R$ 49,90</span>
+                                <p class="text-base font-bold text-slate-900">R$ 26,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 pt-0">
+                        <a href="https://wa.me/5541999999999?text=Olá!%20Gostaria%20de%20comprar%20o%20produto:%20Camiseta%20Algodão%2030.1%20Premium" target="_blank" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center py-2 rounded-lg text-sm font-semibold block transition">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card de Produto 2 -->
+                <div class="bg-white rounded-xl shadow-xs border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="bg-gray-100 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=500" alt="Shorts Elastano" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="text-sm font-medium text-slate-800 line-clamp-2">SHORTS ELASTANO BOARDSHORT</h3>
+                            <div class="mt-2">
+                                <span class="text-xs text-gray-400 line-through">R$ 59,90</span>
+                                <p class="text-base font-bold text-slate-900">R$ 39,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 pt-0">
+                        <a href="https://wa.me/5541999999999?text=Olá!%20Gostaria%20de%20comprar%20o%20produto:%20Shorts%20Elastano%20Boardshort" target="_blank" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center py-2 rounded-lg text-sm font-semibold block transition">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card de Produto 3 -->
+                <div class="bg-white rounded-xl shadow-xs border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="bg-gray-100 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500" alt="Boné" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="text-sm font-medium text-slate-800 line-clamp-2">BONÉ PREMIUM ABA CURVA</h3>
+                            <div class="mt-2">
+                                <span class="text-xs text-gray-400 line-through">R$ 40,00</span>
+                                <p class="text-base font-bold text-slate-900">R$ 25,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 pt-0">
+                        <a href="https://wa.me/5541999999999?text=Olá!%20Gostaria%20de%20comprar%20o%20produto:%20Boné%20Premium%20Aba%20Curva" target="_blank" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center py-2 rounded-lg text-sm font-semibold block transition">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card de Produto 4 -->
+                <div class="bg-white rounded-xl shadow-xs border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="bg-gray-100 h-44 flex items-center justify-center overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500" alt="Conjunto Moletom" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="text-sm font-medium text-slate-800 line-clamp-2">CONJUNTO MOLETOM CANGURU</h3>
+                            <div class="mt-2">
+                                <span class="text-xs text-gray-400 line-through">R$ 158,00</span>
+                                <p class="text-base font-bold text-slate-900">R$ 129,00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 pt-0">
+                        <a href="https://wa.me/5541999999999?text=Olá!%20Gostaria%20de%20comprar%20o%20produto:%20Conjunto%20Moletom%20Canguru" target="_blank" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center py-2 rounded-lg text-sm font-semibold block transition">
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-900 text-gray-400 text-center py-6 mt-12 text-sm border-t border-slate-800">
+        <p class="font-semibold text-white">MINHA LOJA ATACADO</p>
+        <p class="mt-1">CNPJ: 00.000.000/0001-00 | Curitiba, PR</p>
+        <p class="text-xs mt-3 text-gray-500">Desenvolvido com GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
